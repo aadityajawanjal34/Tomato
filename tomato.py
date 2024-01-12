@@ -85,7 +85,7 @@ cnn.add(layers.Dense(10, activation='softmax'))
 
 cnn.summary()
 
-opt = keras.optimizers.Adam(learning_rate=0.001)
+opt = keras.optimizers.Adam(learning_rate=0.0001)
 
 cnn.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
 
